@@ -1,0 +1,436 @@
+.admin-main{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-areas: "Sidebar nav nav nav nav nav nav"
+                         "Sidebar home home home home  home  home"
+                         "Sidebar home home home home  home  home"
+                         "Sidebar home home home home  home  home"
+                         "Sidebar home home home home  home  home"
+                         "Sidebar home home home home  home  home"
+                         "Sidebar home home home home  home  home";
+}
+.sidebar{
+   
+    grid-area: Sidebar;
+    width: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: #242745 
+}
+.adminlogo{
+  display: flex;
+   justify-content:center;
+}
+.adminimage{
+  width:40px;
+  height:40px;
+  filter: contrast(100%);
+  object-fit: contain;
+  border-radius: 50%;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+.admintext{
+  color: #FFFFFF;
+}
+.head{
+    height: 100px;
+    background-color: #f0f0f0;
+    grid-area: nav;
+    width: 1100px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.adminHome{
+    grid-area:home ;
+    background-color: #f0f0f0;
+    height: 480px;
+    width: 1110px;
+    overflow-x: scroll;
+}
+.category {
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+	&::-webkit-scrollbar:horizontal {
+		height: 10px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: transparentize(#ccc, 0.7);
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: transparentize(#ccc, 0.5);
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logodiv{
+   display: flex;
+   justify-content: space-between;
+   height: 150px;
+   width: 80px;
+   margin: 8px;
+   margin-right: 800px;
+}
+.headerDiv{
+   height: 100px;
+   display: flex;
+   justify-content:center;
+   background-color: #f0f0f0;
+
+}
+.links{
+    padding-top: 50px;
+    display: flex;  
+    flex-direction: column; 
+    margin: 5px; 
+ }
+ 
+ .Llinks{
+    text-decoration: none;
+    color: #c9c8ce;
+    font-size: 20px;
+ }
+ .sidelinks:active{
+  color: #7367f0;
+ }
+ .sidelinks:hover{
+  background-color: #414158;
+  border-radius: 15px;
+ 
+ }
+ .sidelinks{
+  width: 150px;
+  height: 50px;
+ }
+
+ .main{
+    height: 600px;
+ }
+ .district{
+   font-size: 18px;
+    color: rgb(12, 11, 11);
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  
+   width: 600px;
+   margin-left: 320px;
+   margin-top: 30px;
+   padding: 10px;
+    
+ }
+ 
+ #fname{
+   height: 30px;
+   width: 400px;
+   border-radius: 5px;
+   border: none;
+ }
+ .btndis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+ }
+ 
+ .place{
+   font-size: 18px;
+   color: rgb(12, 11, 11);
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  width: 600px;
+  margin-left: 320px;
+  margin-top: 30px;
+  padding: 10px;
+ }
+ .inputplace{
+   height: 30px;
+   width: 400px;
+   border-radius: 5px;
+   border: none;
+ }
+ #selectdistrict{
+   height: 30px;
+   width: 400px;
+   border-radius: 5px;
+   border: none;
+ }
+ 
+.category{
+   font-size: 18px;
+   color: rgb(12, 11, 11);
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  width: 600px;
+  margin-left: 320px;
+  margin-top: 30px;
+  padding: 10px;
+}
+.inputcategory{
+   height: 30px;
+   width: 400px;
+   border-radius: 5px;
+   border: none;
+}
+
+ .SubCategory{
+   font-size: 18px;
+   color: rgb(12, 11, 11);
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  width: 600px;
+  margin-left: 320px;
+  margin-top: 30px;
+  padding: 10px;
+ }
+ .inputsubcategory{
+   height: 30px;
+   width: 400px;
+   border-radius: 5px;
+   border: none;
+ }
+ #selectCategory{
+   height: 30px;
+   width: 405px;
+   border-radius: 5px;
+   border: none;
+ }
+ .main-div{
+   display: flex;
+   width: 100%;
+   padding: 10px;
+ }
+ .second-div{
+   display: flex;
+   width: 400px;
+   padding: 10px;
+ }
+ .third-div{
+   display: flex;
+   padding: 10px;
+ }
+ .second1-div{
+   width: 100%;
+   display: flex;
+   padding: 5px;
+  
+ }
+ 
+ .card1{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 150px;
+   width: 250px;
+   margin: 5px;
+   border-radius: 10px;
+   display: flex;
+   justify-content:center;
+ }
+ .cardcontent{
+  display:flex;
+  justify-content:center;
+
+ }
+ .image{
+  width:60px;
+  height:60px;
+   border-radius:50%;
+   margin-top:40px;
+ }
+ .text{
+  padding:20px;
+ }
+ .textwallet{
+  padding:20px;
+  color: rgb(235, 103, 103);
+ }
+ .card2{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 150px;
+   width: 250px;
+   margin: 5px;
+   border-radius: 10px;
+   display: flex;
+   justify-content:center;
+ }
+ .card7{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 150px;
+   width: 250px;
+   margin: 5px;
+   border-radius: 10px;
+   display: flex;
+   justify-content:center;
+ }
+ .card8{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 150px;
+   width: 250px;
+   margin: 5px;
+   border-radius: 10px;
+   display: flex;
+   justify-content:center;
+ }
+ 
+
+ .card3{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 300px;
+   width: 195px;
+   margin: 5px;
+   border-radius: 10px;
+ }
+ .card4{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 300px;
+   width: 195px;
+   margin: 5px;
+   border-radius: 10px;
+ }
+ .card5{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 215px;
+   width: 395px;
+   margin: 10px;
+   border-radius: 10px;
+ }
+ .card6{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   height: 550px;
+   width: 650px;
+   margin: 5px;
+   border-radius: 10px;
+ }
+ .AdminInfoPages{
+  width: 210px;
+  height: 32px;
+ border-radius: 4px;  
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #c9c8ce;
+  
+ }
+ .AdminInfoPages:hover{
+  color: #2874f0;
+    background-color: #f5faff;
+}
+.floating-label-groupAdmin {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
+  margin-left: 60px;
+}
+
+	.floating-label {
+		font-size: 16px;
+		color: #000000;
+		position: absolute;
+		pointer-events: none;
+		top: 9px;
+		left: 12px;
+		transition: all 0.1s ease;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label {
+		top: -20px;
+		bottom: 80px;
+		left: 0px;
+		font-size: 18px;
+		opacity: 1;
+		color: #000000;
+	}
+
+
+.row {
+	margin-top: 50px;
+}
+.form-control{
+  height: 30px;
+   width: 400px;
+   border-radius: 5px;
+   border: none;
+}
+
+/* .districtDltBtn{
+  background-color: rgb(243, 5, 5);
+  border: 1px solid #c9c8ce;
+  margin-left: 15px;
+  color: white;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+} */
+.districtUpdatebtn{
+  background-color: rgb(4, 161, 4);
+  border: 1px solid #c9c8ce;
+  margin-left: 15px;
+  color: white;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+}
+.th,td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #080404;
+}
+
+
+
+.districtDltBtn {
+  background: #e3403a;
+  border: 1px solid #da251f;
+  box-shadow: 0px 2px 0 #d6251f, 2px 4px 6px #e02a24;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.districtDltBtn:hover {
+  background: #e02c26;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #c2211c;
+  transition: all 250ms linear;
+}
+
+.districtUpdatebtn {
+  background: #2b5711;
+  border: 1px solid #297926;
+  box-shadow: 0px 2px 0 #62a524, 2px 4px 6px #2e2d2d;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.districtUpdatebtn:hover {
+  background: #38b34c;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 250ms linear;
+}
